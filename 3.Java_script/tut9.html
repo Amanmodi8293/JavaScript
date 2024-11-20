@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interection Using alert and confirm prompt</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ad. Ipsa modi dolorum doloribus a tempore nulla nesciunt minus error, vitae velit ullam repellat beatae veniam totam unde aut et!</h1>
+    </div>
+    <script>
+        // Alert in in-browser javascript dose not return anything
+        let a = alert('this is a message');
+        console.log(a);
+        let name = prompt('what is your name','geust');
+        console.log(name);
+        let deletepost = confirm('Do you really want to delete this post?');
+        // console.log(deletepost);
+        if(deletepost){
+            console.log('your post has been deleted sucssefully');
+        }
+        else{
+            console.log('your post has not been deleted');
+        }
+    </script>
+</body>
+</html>

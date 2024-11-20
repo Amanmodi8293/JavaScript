@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+        #btn{
+            padding: 20px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            border: 5px solid rgb(149, 0, 32);
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Event -->
+    <!-- click
+    contextmenu
+    
+    mousedown/mousedown
+    mouseover/mousedown 
+    mousemove
+
+    submit 
+    focus
+    Domcontentloded
+    trasitionend -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem quos, error hic doloribus sed aspernatur tempora repudiandae quas cum ut praesentium, ullam officiis accusamus rerum optio voluptates laudantium? Nam, aliquam.</p>
+    </div>
+    <button id="btn" onclick="toggleid()">show/hide</button>
+    <script>
+        // function toggleid(){
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+        //     if(para.style.display != "none"){
+            //         para.style.display = 'none';
+            //     }
+            //     else{
+                //         para.style.display = 'block';
+                //     }
+                // }
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('mouse inside the para')
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('mouse outside the para')
+        });
+
+    </script>
+</body>
+</html>

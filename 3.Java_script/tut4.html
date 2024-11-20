@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript string function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str ="aman is a good is boy";
+        console.log(str);
+
+        // First occurence is a substring
+        var position = str.indexOf('a');
+        console.log(position);
+        position = str.indexOf('y');
+        console.log(position);
+        // Last occurence is a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring form a string
+        var substr = str.slice(0,22);
+        var substr = str.substring(0,3);
+        var substr1 = str.substr(0,3);
+        console.log(substr1);
+
+        //  substring replace
+        var replace = str.replace('good','bad');
+        console.log(str);
+        console.log(replace);
+
+        // string converting to upper and lower case
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+
+        var newstring = str.concat("modi ji");
+        console.log(newstring);
+
+        var strwithwhitespace = "   this is a            whitespace    ";
+        console.log(strwithwhitespace);
+        console.log(strwithwhitespace.trim());
+
+        var char2 = str.charAt(3);
+        console.log(char2);
+
+        var char = str.charCodeAt(3);
+        console.log(char);
+
+        console.log(str[3]);
+        </script>
+</body>
+</html>

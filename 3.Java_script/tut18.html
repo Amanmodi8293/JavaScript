@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ut aliquid ex iste autem unde minus beatae nemo libero, dolores aut a fugit impedit cupiditate, quas in incidunt voluptatem minima.
+    </div>
+    <script>
+        let Jsonobj ={
+            name: 'Aman Modi',
+            class: "B.Tech",
+            Branch: 'CSE',
+            semester: "4th"
+        }
+        console.log(Jsonobj);
+        let Json = JSON.stringify(Jsonobj);
+        console.log(Json);
+        Json = Json.replace("Aman Modi","Modi Ji");
+        console.log(Json);
+        newjson = JSON.parse(Json);
+        console.log(newjson);
+    </script>
+    
+</body>
+</html>

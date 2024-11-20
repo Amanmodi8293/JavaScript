@@ -1,0 +1,23 @@
+let name = "amanmodi";
+// console.log(name.length);
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+// console.log(name.slice(2, 6));
+// console.log(name.slice(2));
+// console.log(name.replace("aman", "shubham"));
+// let friend = "chourasiya";
+// console.log(friend.concat(" is a friend of ", name));
+// console.log(name.concat(" is a friend of ", name));
+// console.log(friend.concat(" is a friend of ", friend));
+// console.log(name.concat(" is a friend of ", friend));
+// let a = "                     aman                    ";
+// console.log(a);
+// console.log(a.trim())
+console.log(name[0]);
+console.log(name[1]);
+console.log(name[2]);
+console.log(name[3]);
+let fr = "aman" + " modi " + "chourasiya";
+let dr = "aman\tmodi";
+console.log(dr);
+console.log(fr);
